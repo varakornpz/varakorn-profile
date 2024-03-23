@@ -25,7 +25,7 @@ export default function Home() {
           </div>
           <h1 className="text-white md:text-2xl text-xl mt-6">My Skills</h1>
           <div className="text-xl italic md:pl-5 pl-2 flex flex-col md:mt-4 mt-1 gap-3">
-              <h1 className='text-white font-bold'>FrontEnd</h1>
+              <h1 className='text-white font-bold'>Frontend</h1>
               <FrontendSkill/>
               <h1 className='text-white font-bold'>Backend</h1>
               <BackendSkill/>

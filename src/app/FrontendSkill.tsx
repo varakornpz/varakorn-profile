@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 type Props = {}
 
-export default function ({}: Props) {
+export default function frontendskill({}: Props) {
   return (
         <div className="text-white grid md:grid-cols-10 grid-cols-3 gap-02 w-fit pl-0 md:border-0 border rounded-md md:pt-0 pt-2 md:bg-gray-900 bg-slate-900">
                 <div className="flex flex-col md:border border-slate-500  justify-center items-center w-auto px-6 py-4 text-sm">
