@@ -13,6 +13,8 @@ export default function Home() {
             <h1 className="font-bold md:pl-0 pl-0 md:text-6xl text-4xl bg-gradient-to-r from-blue-400 to-green-300 text-transparent bg-clip-text">Varakorn Kaewmanee</h1>
           </div>
         </div>
+        <div className='absolute md:top-28 top-10 left-3/4 md:w-60 md:h-60 w-24 h-24 bg-blue-400 rounded-full  filter blur-3xl mix-blend-normal opacity-30'></div>
+        <div className='absolute md:top-28 top-10 left-2/3 md:w-60 md:h-60 w-24 h-24 bg-cyan-300  rounded-full filter blur-3xl mix-blend-normal  opacity-30'></div>
         <div className="md:mt-0 mt-4 md:ml-36 ml-5 flex flex-col md:w-auto w-11/12">
           <div className='bg-slate-900 w-fit px-6 py-4 border border-solid rounded-md border-slate-500'>
             <h1 className="text-white md:text-2xl text-xl font-bold">About Me</h1>
