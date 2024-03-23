@@ -20,7 +20,7 @@ export default function Home() {
             <h1 className="text-white md:text-2xl text-xl font-bold">About Me</h1>
             <div className="text-white md:text-xl text-base italic pl-5 flex flex-col gap-3">
               <h2>{"> I study in grade 12 at Surat Thani School."}</h2>
-              <h2>{"> I like to write some code in my free time."}</h2>
+              <h2>{"> I like to code in my free time."}</h2>
             </div>
           </div>
           <h1 className="text-white md:text-2xl text-xl mt-6">My Skills</h1>
