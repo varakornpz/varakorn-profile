@@ -19,7 +19,7 @@ export default function Other({}: Props) {
                 </div>
                 <div className="flex flex-col md:border border-slate-500  justify-center items-center w-auto px-6 py-4 text-sm">
                   <Image className='md:w-16 w-10' src={"/csharp.svg"} alt='react' width={100} height={100}></Image>
-                  <h2 className='md:text-base  font-bold capitalize pt-2'>c++</h2>
+                  <h2 className='md:text-base  font-bold capitalize pt-2'>c#</h2>
                 </div>
                 <div className="flex flex-col md:border border-slate-500  justify-center items-center w-auto px-6 py-4 text-sm">
                   <Image className='md:w-12 w-8' src={"/python.svg"} alt='react' width={100} height={100}></Image>
