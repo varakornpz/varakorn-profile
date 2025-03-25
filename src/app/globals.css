@@ -5,3 +5,21 @@
 *{
   scroll-behavior: smooth;
 }
+
+@keyframes move1 {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-30px, 20px); }
+}
+
+@keyframes move2 {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(30px, -20px); }
+}
+
+.animate-move1 {
+  animation: move1 2s ease-in-out infinite alternate;
+}
+
+.animate-move2 {
+  animation: move2 2s ease-in-out infinite alternate;
+}
