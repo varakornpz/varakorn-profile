@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     icon : "./varakorn_favicon.png"
   },
   openGraph : {
-    images : "./opengraph-image"
+    images : ["opengraph-image.png"]
   }
 };
 
