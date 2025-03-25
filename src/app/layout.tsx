@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase : new URL("https://profile.varakorn.net"),
   title: "varakorn.net",
-  description: "created by my self",
+  description: "Come to my website to waste your time.",
   icons : {
     icon : "./varakorn_favicon.png"
   },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       url : "./opengraph-image.png",
       width : 1200,
       height : 630
-    }]
+    }],
   }
 };
 
