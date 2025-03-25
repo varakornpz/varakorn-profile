@@ -1,0 +1,15 @@
+@keyframes NavfadeInUp {
+    from {
+      opacity: 0;
+      filter: blur(4px);
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  
+  .nav-fade-in-up {
+    animation: NavfadeInUp 1s ease-out forwards;
+  }
+  
