@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     icon : "./varakorn_favicon.png"
   },
   openGraph : {
-    images : ["./opengraph-image.png"]
+    images : ["https://cdn.discordapp.com/attachments/981586526158880788/1354086069704069120/metaTag.png?ex=67e4026c&is=67e2b0ec&hm=d2bf830c8d5ac7620298bdb9fc1ba86b1681060dbe31efe724dbe02048b84c6c&"]
   }
 };
 
