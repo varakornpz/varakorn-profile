@@ -4,9 +4,6 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Varakorn Kaewmanee",
   description: "created by my self",
-  openGraph : {
-      images : ""
-  }
 };
 
 export default function Home() {
