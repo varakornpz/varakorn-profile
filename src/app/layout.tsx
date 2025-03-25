@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase : new URL("https://profile.varakorn.net"),
   title: "varakorn.net",
   description: "created by my self",
   icons : {
