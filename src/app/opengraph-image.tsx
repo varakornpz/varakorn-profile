@@ -5,4 +5,6 @@ export const alt = 'varakorn.net'
 export const contentType = 'image/png'
  
 
-export default  OGImage
+export default ()=>{
+    OGImage
+}
