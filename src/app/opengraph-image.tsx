@@ -1,5 +1,5 @@
 
-import OGImage from './opengraph-image.png'
+import OGImage from 'https://profile.varakorn.net/opengraph-image.png'
  
 export const alt = 'varakorn.net'
  
