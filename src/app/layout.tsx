@@ -6,14 +6,14 @@ import Navbar from "./components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase : new URL("http://localhost:3000") ,
+  // metadataBase : new URL("http://localhost:3000") ,
   title: "varakorn.net",
   description: "created by my self",
   icons : {
     icon : "./varakorn_favicon.png"
   },
   openGraph : {
-    images : "./metadata.png"
+    images : "./opengraph-image"
   }
 };
 
