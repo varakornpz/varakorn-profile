@@ -8,12 +8,12 @@
 
 @keyframes move1 {
   0% { transform: translate(0, 0); }
-  100% { transform: translate(-30px, 20px); }
+  100% { transform: translate(-80px, 40px); }
 }
 
 @keyframes move2 {
   0% { transform: translate(0, 0); }
-  100% { transform: translate(30px, -20px); }
+  100% { transform: translate(80px, -40px); }
 }
 
 .animate-move1 {
@@ -23,3 +23,21 @@
 .animate-move2 {
   animation: move2 2s ease-in-out infinite alternate;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+

@@ -1,8 +1,6 @@
 'use client'
 import { usePathname } from "next/navigation"
 import Link from "next/link"
-import { Children } from "react"
-import { IconType } from "react-icons"
 
 type Props = {
     to : string ,

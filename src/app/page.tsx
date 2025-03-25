@@ -1,17 +1,11 @@
 import SocialMedia from "./SocialMedia";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Varakorn Kaewmanee",
-  description: "created by my self",
-};
 
 export default function Home() {
   return (
-    <>
-    <main className="">
+    <main className="z-0">
       <div className="bg-gray-900 h-screen flex pb-28 flex-col" id="sec1 scroll-smooth">
-        <div className="sm:my-14 sm:pt-20 pt-16 mt-6 sm:ml-36 text-white sm:text-4xl">
+        <div className="sm:my-14 sm:pt-20 mt-24 sm:ml-36 text-white sm:text-4xl animate-fade-in-up">
           <h1 className='sm:text-6xl text-4xl sm:pl-0 pl-5 font-bold'>Guess <span className='sm:hidden bg-gradient-to-r text-transparent bg-clip-text from-white to-green-300'>what?</span><span className='sm:inline hidden'>What?</span></h1>
             <div className="flex sm:pl-0 pl-5 sm:flex-row flex-col sm:gap-2 gap-0">
                 <h1 className='sm:text-6xl text-4xl'>I'm</h1>
@@ -73,6 +67,5 @@ export default function Home() {
       </div>
 
     </main>
-    </>
   );
 }
