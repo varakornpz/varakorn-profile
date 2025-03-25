@@ -3,8 +3,9 @@ import SocialMedia from "./SocialMedia";
 
 export default function Home() {
   return (
+    <>
     <main className="">
-      <div className="bg-gray-900 h-screen flex pb-28 flex-col" id="sec1 scroll-smooth">
+      <div className="z-0 bg-gray-900 h-screen flex pb-28 flex-col" id="sec1">
         <div className="sm:my-14 sm:pt-20 mt-24 sm:ml-36 text-white sm:text-4xl animate-fade-in-up">
           <h1 className='sm:text-6xl text-4xl sm:pl-0 pl-5 font-bold'>Guess <span className='sm:hidden bg-gradient-to-r text-transparent bg-clip-text from-white to-green-300'>what?</span><span className='sm:inline hidden'>What?</span></h1>
             <div className="flex sm:pl-0 pl-5 sm:flex-row flex-col sm:gap-2 gap-0">
@@ -16,14 +17,18 @@ export default function Home() {
             <SocialMedia/>
           </div>
         </div>
-
-        <div>
-          <div className='absolute sm:top-28 top-10 left-3/4 sm:w-60 sm:h-60 w-24 h-24 bg-blue-400 rounded-full  filter blur-3xl mix-blend-normal opacity-30 move1'></div>
-          <div className='absolute sm:top-28 top-10 left-2/3 sm:w-60 sm:h-60 w-24 h-24 bg-cyan-300  rounded-full filter blur-3xl mix-blend-normal  opacity-30 move2'></div>
         </div>
 
 
       
+
+    </main>
+          <div className='absolute sm:top-28 top-14 sm:left-[75%] left-52 sm:w-60 sm:h-60 w-32 h-32 bg-blue-400 rounded-full  filter blur-3xl mix-blend-screen opacity-70 move1'></div>
+          <div className='absolute sm:top-28 top-14 sm:left-[80%] left-56 sm:w-60 sm:h-60 w-32 h-32 bg-cyan-300  rounded-full filter blur-3xl mix-blend-screen opacity-70 move2'></div>
+    </>
+  );
+}
+
 {/* 
         <div className="sm:mt-0 mt-4 sm:ml-36 ml-5 flex flex-col sm:w-auto w-11/12">
           <div className='bg-slate-900 w-fit px-6 py-4 border border-solid rounded-sm border-slate-500'>
@@ -59,13 +64,3 @@ export default function Home() {
               <a className='text-sky-500' href="https://www.facebook.com/profile.php?id=100029589252616" target='_blank'>Pleum Varakorn</a>
             </div>
           </div> */}
-
-      </div>
-      
-      <div className="h-screen">
-
-      </div>
-
-    </main>
-  );
-}
