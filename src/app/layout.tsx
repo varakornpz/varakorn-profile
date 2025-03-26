@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase : new URL("https://profile.varakorn.net"),
-  title: "varakorn.net",
+  title: "Varakorn Kaewmanee",
   description: "Come to my website to waste your time.",
   icons : {
     icon : "./varakorn_favicon.png"

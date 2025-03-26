@@ -8,7 +8,6 @@ type Props = {
     icon : React.ReactNode ,
     children : React.ReactNode
 }
-
 export default (props : Props)=>{
     const pathname = usePathname()
     const {to  , icon , children} = props
