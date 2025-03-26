@@ -8,7 +8,7 @@ export default ()=>{
                         Under Construction... Maybe?<p className="sm:inline hidden">🤔</p>
                     </h1>
                     <h2 className="text-white sm:text-xl  mt-7 text-center">
-                        We're working on something here... not sure if it's genius or a total disaster. Stay tuned!
+                        I'm working on something here... not sure if it's genius or a total disaster. Stay tuned!
                     </h2>
                 </div>
             </div>
