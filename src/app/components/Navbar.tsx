@@ -14,7 +14,7 @@ const mainNavbar = ()=>{
     <nav className={`${pathToShow.includes(pathname) ? null : "hidden"} nav-fade-in-up fixed top-6 left-1/2 transform -translate-x-1/2 backdrop-blur-md border-emerald-400 border-2 rounded-lg px-2 py-1 flex flex-row gap-4 z-50`}>
       <CustomLink to="/" icon={<BiHomeAlt />}>Home</CustomLink>
       {/* <CustomLink to="/about" icon={<BiIdCard />}>About</CustomLink> */}
-      <CustomLink to="project" icon={<GoProjectRoadmap/>}>Project</CustomLink>
+      <CustomLink to="/project" icon={<GoProjectRoadmap/>}>Project</CustomLink>
     </nav>
   )
 }
