@@ -6,16 +6,20 @@ type StackName =
     | "react"
     | "next"
     | "elysia"
+    | "svelte"
     | "sveltekit"
     | "tailwind"
+    | "stripe"
 
 
-const stackImage = {
-    "react" : "" ,
-    "next" : "" ,
-    "elysia" : "" ,
-    "sveltekit" : "" ,
-    "tailwind" : ""
+const stackImage: Record<StackName, string> = {
+    "react" : "/stack_icon/react.svg" ,
+    "next" : "/stack_icon/next.svg" ,
+    "elysia" : "/stack_icon/elysia.svg" ,
+    "sveltekit" : "/stack_icon/svelte.svg" ,
+    "tailwind" : "/stack_icon/tailwind.svg" ,
+    "svelte" : "/stack_icon/svelte.svg" ,
+    "stripe" : "/stack_icon/stripe.svg"
 }
 
 type Props = {
@@ -29,35 +33,17 @@ type Props = {
 
 export default function ProjectCaed(props : Props){
     const {name , title , image , stackName , link , scale = 100} = props
+    const loadStack = ()=>{
+        for (let i = 0 ; i < stackName.length ; i++){
+            try{
+                return `/stack_icon/${stackName[i]}.svg`
+            }
+            catch{
+                return
+            }
+        }
+    }
     return(
-        // <div className="bg-white w-[25vw] h-[30vh] rounded-md flex flex-row items-center">
-        //     <div className="w-[13vw] h-[29vh] ml-1 relative overflow-hidden rounded-md">
-        //         <Image
-        //             src={"https://media.thairath.co.th/image/a5HOutp1V22x5itXrQNzxdcxXTdpx9Y07mpRTTPa7KYw3ke9vA1.png"}
-        //             fill
-        //             alt={name}
-        //             className="object-cover"
-        //         />
-        //     </div>
-        //     <div className="ml-2">
-        //         <h1>Heeeeeeee</h1>
-        //     </div>
-        // </div>
-         
-        // <div className="bg-white border-green-500 text-white w-[25vw] h-[23vh] flex flex-col rounded-b-md">
-        //     <div className="w-[25vw] h-[20vh] overflow-hidden relative rounded-t-md -inset-y-3">
-        //         <Image
-        //             src={"https://media.thairath.co.th/image/a5HOutp1V22x5itXrQNzxdcxXTdpx9Y07mpRTTPa7KYw3ke9vA1.png"}
-        //                 fill
-        //                 alt={name}
-        //                 className="object-cover"
-        //             />
-        //     </div>
-        //     <div className="bg-gray-800 pl-2 pb-2">
-        //         <h1 className="font-semibold">{name}</h1>
-        //         <p>{title}</p>
-        //     </div>
-        // </div>
 
         <div className="md:w-[25vw] w-[85vw] h-fit">
             <div className="h-[25vh] relative overflow-hidden rounded-md">
@@ -72,6 +58,18 @@ export default function ProjectCaed(props : Props){
             <div className="text-white">
                 <h1 className="font-semibold">{name}</h1>
                 <p>{title}</p>
+                <div className="flex flex-row gap-3">
+                    {stackName.map((stack)=>(
+                        <Image
+                            key={stack}
+                            src={stackImage[stack]}
+                            width={24}
+                            height={24}
+                            alt={stack}
+                            
+                        />
+                    ))}
+                </div>
                 {typeof(link) == "string" ? <Link target="_blank" href={link}><span className="inline-flex items-center gap-1 font-bold underline   ">Visit<FaExternalLinkAlt/></span></Link> : null}
             </div>
         </div>

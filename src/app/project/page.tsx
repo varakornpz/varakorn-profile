@@ -44,7 +44,7 @@ export default function ProjectPage() {
                         name="StackyCraft" 
                         title="A discordbot for ping minecraft server" 
                         image="/image/stackycraft.png" 
-                        stackName={["sveltekit" , "tailwind"]}
+                        stackName={["elysia" , "stripe"]}
                         link={"https://stackybit.com/discord/bot/stackycraft"}
                     />
             </div>
